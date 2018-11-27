@@ -1,0 +1,12 @@
+
+public interface AccountInterface {
+
+}
+
+public void getBalance();
+
+public void getaccountNo();
+
+public void getDeposit():
+
+public void withdrawn();

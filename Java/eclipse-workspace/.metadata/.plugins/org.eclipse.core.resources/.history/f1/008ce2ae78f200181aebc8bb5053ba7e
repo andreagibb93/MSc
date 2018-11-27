@@ -1,0 +1,23 @@
+package characters;
+
+//class player, inherits from Character class
+public class Player extends Character {
+	
+
+	//constructor for player class
+	public Player() {
+		super();
+	}
+	
+	// player movement
+	public void move() {
+		
+	}
+	
+	// player attack the enemy
+	public void attackEnemy(Enemy e) {
+		
+	}
+	
+
+}

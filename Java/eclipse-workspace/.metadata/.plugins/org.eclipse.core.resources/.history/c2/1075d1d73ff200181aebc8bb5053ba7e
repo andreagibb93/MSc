@@ -1,0 +1,21 @@
+package week11.tests;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class TestCaseWeek11 {
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+	
+	@Test (expected = MyEmptyStackException.class)
+	public void testPopEmptyStack() {
+		StackADT<String> s = new StackStack<String>();
+		s.pop();
+	}
+
+
+}

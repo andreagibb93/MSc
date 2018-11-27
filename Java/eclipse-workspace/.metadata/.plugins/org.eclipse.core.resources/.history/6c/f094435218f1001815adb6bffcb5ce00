@@ -1,0 +1,27 @@
+
+public class PremiumAccount extends BankAccount {
+
+	private float minBalance;
+
+	public PremiumAccount() {
+		minBalance = (float) 10.00;
+
+	}
+
+	public void setMinBalance() {
+		this.minBalance = minBalance;
+	}
+
+	public float getminBalance() {
+		return this.minBalance;
+	}
+
+	public void withdraw(float amount) {
+		if (getBalance() < (amount + minBalance){
+			System.out.println("insufficient funds");
+		}
+		else {
+			super.withdraw(amount);
+		}
+	}
+}

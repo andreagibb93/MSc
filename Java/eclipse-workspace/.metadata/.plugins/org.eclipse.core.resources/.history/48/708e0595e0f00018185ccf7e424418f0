@@ -1,0 +1,16 @@
+
+public class KidsAccount extends BankAccount{
+	
+	private float bonus;
+	
+	public KidsAccount() {
+		bonus = (float) 10.00;
+	}
+
+	public void addBonus()
+	{
+		super.deposit(getBalance() + bonus);
+	}
+	
+
+}

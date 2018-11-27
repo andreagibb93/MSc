@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=ElectronicResource
+comment1.params=
+comment1.target=ElectronicResource()
+comment2.params=
+comment2.target=java.util.ArrayList\ get_devices()
+comment3.params=device
+comment3.target=void\ add_devices(ElectronicDevice)
+comment4.params=
+comment4.target=void\ print_details()
+numComments=5

@@ -1,0 +1,40 @@
+package week11.mainimplementation;
+public interface StackADT<E>
+{
+    /**
+     * Inserts element to be at top of the stack.
+     * 
+     * @throws MyFullStackException
+     */
+    public void push(E element);
+	
+    /**
+     * Removes and returns the top element on the stack.
+     * 
+     * @throws MyEmptyStackException
+     */
+	public E pop();
+	
+    /**
+     * Returns the top element on the stack, without removing it.
+     * 
+     * @throws MyEmptyStackException
+     */
+   	public E top();
+	
+    /**
+     * Returns the number of elements on the stack.
+     */
+	public int size();
+	
+    /**
+     * Returns true if the stack is empty (no elements on the stack); otherwise, false.
+     */
+	public boolean isEmpty();
+	
+    /**
+     * Returns the index of the first occurrence of the specified element on the stack.
+     * You MUST specify your own Exception, if element not found!
+     */
+	public int indexOf(E element);
+}

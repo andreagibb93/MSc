@@ -1,0 +1,53 @@
+public class BankAccount {
+	
+	private String accountNo;
+	private int balance;
+
+
+public BankAccount () {
+	accountNo = "default";
+	balance = 0;
+
+}
+
+public String getAccountNumber()
+{
+	return accountNo;
+}
+
+public int getBalance()
+{
+	return balance;
+}
+
+// deposits amount into an account
+public void deposit(float amount)
+{
+	balance += amount;
+}
+
+public void withdraw(float amount) {
+	if(amount > balance) {
+		System.out.println("insufficient funds");
+		
+	}
+	else {
+		balance += amount;
+	}
+}
+
+public void printDetails() {
+	
+System.out.println(accountNo);
+System.out.println(balance);
+
+}
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=ElectronicDevice
+comment0.text=\n\ Write\ a\ description\ of\ class\ ElectronicDevice\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=ElectronicDevice()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ ElectronicDevice\n
+comment2.params=
+comment2.target=java.lang.String\ get_location()
+comment3.params=
+comment3.target=java.lang.String\ get_available()
+comment4.params=new_location
+comment4.target=void\ set_location(java.lang.String)
+comment5.params=new_available
+comment5.target=void\ set_available(java.lang.String)
+comment6.params=
+comment6.target=void\ print_details()
+numComments=7

@@ -1,0 +1,37 @@
+import java.util.ArrayList;
+
+public class weekeight {
+	
+	private ArrayList<Student> studentRecords;
+}
+
+public weekeight() {
+	studentRecords = new ArrayList<>();
+}
+
+
+
+//method for-each loop, that iterates though 
+//the collect and prints the details of each
+//using get and set method
+
+public void studentRecords()
+{
+	for(Student record : studentRecords) {
+		System.out.println(record.getName());
+		System.out.println(record.getRegNo());
+	}
+}
+
+//method while loop, that iterates though 
+//the collect and prints the details of each
+//using get and set method
+
+public void studentRecords()
+{
+	int i = 0;
+	while(i < studentRecords.size) {
+		System.out.println(studentRecords[i].getName());
+		i++;
+	}
+}

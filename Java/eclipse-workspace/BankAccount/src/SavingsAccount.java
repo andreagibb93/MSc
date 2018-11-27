@@ -1,0 +1,14 @@
+// SavingsAccount: supports interest rate
+public class SavingsAccount extends BankAccount {
+
+	private float interestRate;
+
+	public SavingsAccount() {
+		interestRate = (float) 0.05;
+	}
+
+	public void interestRate() {
+		super.deposit(getBalance() * interestRate);
+	}
+
+}

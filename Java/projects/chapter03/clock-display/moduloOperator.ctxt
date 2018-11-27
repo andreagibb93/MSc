@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=moduloOperator
+comment0.text=\n\ Write\ a\ description\ of\ class\ moduloOperator\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=moduloOperator()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ moduloOperator\n
+comment2.params=num1\ num2
+comment2.target=int\ sampleMethod(int,\ int)
+numComments=3

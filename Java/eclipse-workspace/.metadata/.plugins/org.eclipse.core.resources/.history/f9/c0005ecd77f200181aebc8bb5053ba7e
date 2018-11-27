@@ -1,0 +1,11 @@
+package rooms;
+
+import mainImplentation.Enemy;
+
+public class EnemyRoom {
+	private Enemy enemy;
+	
+	public EnemyRoom() {
+		enemy = new Enemy();
+	}
+}

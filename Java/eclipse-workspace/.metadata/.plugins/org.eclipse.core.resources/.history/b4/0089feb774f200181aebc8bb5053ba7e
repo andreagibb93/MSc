@@ -1,0 +1,8 @@
+package mainImplentation;
+
+
+public class RockPaperScissors implements Game {
+	private String[] results = {"Rock", "Paper", "Scissors"};
+	
+	
+}

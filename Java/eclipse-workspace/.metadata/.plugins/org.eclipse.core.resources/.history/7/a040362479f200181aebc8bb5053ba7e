@@ -1,0 +1,14 @@
+package mainImplentation;
+
+import rooms.Room;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Room[][] map = new Room[5][5];
+		
+		for (int x = 0; x < 5; x++) {
+			
+		}
+	}
+}

@@ -1,0 +1,9 @@
+package mainImplentation;
+
+import java.util.ArrayList;
+
+public class RockPaperScissors implements Game {
+	private ArrayList<String> results;
+	
+	
+}

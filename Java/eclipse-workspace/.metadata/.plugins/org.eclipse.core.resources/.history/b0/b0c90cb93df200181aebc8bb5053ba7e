@@ -1,0 +1,6 @@
+
+public class StackStack<E> implements StackADT<E> {
+
+}
+
+

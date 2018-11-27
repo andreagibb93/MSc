@@ -1,0 +1,16 @@
+package mainImplentation;
+
+// class enemy, inherits from Character class
+public class Enemy extends Character {
+	
+	private int health;
+	private int attack;
+	
+	//constructor for objects of class enemy
+	public Enemy() {
+		health = EnemyHealth;
+		
+	}
+	
+}
+	

@@ -1,0 +1,15 @@
+package mainImplentation;
+
+// class of puzzle
+public class Puzzle {
+	
+	// data fields for puzzle class
+	private String question;
+	private String answer;
+	
+	//constructor for puzzle class
+	public Puzzle(String question, String answer) {
+	
+	}
+
+}

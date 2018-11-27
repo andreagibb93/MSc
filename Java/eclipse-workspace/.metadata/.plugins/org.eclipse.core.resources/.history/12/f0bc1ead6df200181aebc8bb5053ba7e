@@ -1,0 +1,15 @@
+package mainImplentation;
+
+//class player, inherits from Character class
+public class Player extends Character{
+	
+
+	//constructor for player class
+	public Player() {
+		super.health;
+		super.attack;
+	}
+	
+	
+
+}

@@ -1,0 +1,59 @@
+import java.util.ArrayList;
+
+public class weekeight {
+	
+	private ArrayList<Student> studentRecords;
+}
+
+public weekeight() {
+	studentRecords = new ArrayList<>();
+}
+
+
+
+//method for-each loop, that iterates though 
+//the collect and prints the details of each
+//using get and set method
+
+public void studentRecords()
+{
+	for(Student record : studentRecords) {
+		System.out.println(record.getName());
+		System.out.println(record.getRegNo());
+	}
+}
+
+//method while loop, that iterates though 
+//the collect and prints the details of each
+//using get and set method
+
+public void studentRecords()
+{
+	int i = 0;
+	while(i < studentRecords.size) {
+		System.out.println(studentRecords[i].getName());
+		System.out.println(studentRecords[i].getRegNo());
+		i++;
+	}
+}
+
+int i = 1;
+while (i <= 10){
+ System.out.println(i*i);
+ i++;
+}
+// output 1 to 10, then stop
+
+
+
+//Write a while loop that prints 
+//out all the multiples of 5 between 10 and 95
+
+public void multiplesOfFive()
+{
+    int index = 10;
+    while(index <=95){
+        System.out.println(index);
+        index = index + 5;
+    }
+}

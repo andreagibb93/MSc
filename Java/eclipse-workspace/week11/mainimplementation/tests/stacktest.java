@@ -1,0 +1,36 @@
+import mainimplementation; 
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class stacktest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+	
+	package week11.tests;
+
+	import static org.junit.jupiter.api.Assertions.*;
+	import week11.junit.jupiter.api.Test
+
+	import org.junit.jupiter.api.Test;
+
+	class TestCaseWeek11 {
+
+		@Test
+		void test() {
+			fail("Not yet implemented");
+		}
+		
+		@Test (expected = MyEmptyStackException.class)
+		public void testPopEmptyStack() {
+			StackADT<String> s = new StackStack<String>();
+			s.pop();
+		}
+
+
+
+}

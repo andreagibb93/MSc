@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=BookCollection
+comment0.text=\n\ Stores\ Book\ objects\ in\ a\ book\ collection.\n\ \n\ @author\ Kostas\n\ @version\ April\ 2016\n
+comment1.params=
+comment1.target=BookCollection()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ BookCollection\n
+comment2.params=book
+comment2.target=void\ addBook(Book)
+comment2.text=\n\ Adds\ a\ new\ Book\ to\ the\ collection\ of\ books.\n\ @param\ book\ The\ Book\ object\ to\ be\ added.\n
+comment3.params=
+comment3.target=void\ listBooksDetails1()
+comment3.text=\n\ Prints\ the\ details\ of\ all\ Book\ objects\ stored\ in\ the\ books\ ArrayList,\ or\ \ \n\ "This\ collection\ is\ empty\!"\ if\ the\ ArrayList\ is\ empty.\n\ (uses\ a\ for-each\ loop)\n
+comment4.params=
+comment4.target=void\ listBooksDetails2()
+comment4.text=\n\ Prints\ the\ details\ of\ all\ Book\ objects\ stored\ in\ the\ books\ ArrayList,\ or\ \ \n\ "This\ collection\ is\ empty\!"\ if\ the\ ArrayList\ is\ empty.\n\ (uses\ a\ while\ loop)\n
+comment5.params=
+comment5.target=int\ numberOfBooks()
+comment5.text=\n\ @return\ The\ number\ of\ books\ (Book\ objects)\ in\n\ \ \ \ \ \ \ \ \ the\ collection.\n
+comment6.params=searchString
+comment6.target=void\ searchCollection(java.lang.String)
+comment6.text=\n\ Prints\ the\ details\ of\ all\ Book\ objects\ that\ EITHER\ their\ title\ \n\ OR\ their\ author's\ name\ start\ with\ the\ searchString\ parameter.\n\ (Uses\ the\ startsWith()\ method\ from\ the\ Java\ String\ class)\n\ \n\ @param\ searchString\ The\ string\ to\ search\ \ \ \ \ \ \ \ \n
+comment7.params=searchString
+comment7.target=void\ searchCollectionENDWITH(java.lang.String)
+comment8.params=searchString
+comment8.target=void\ searchCollectionCONTAINS(java.lang.String)
+numComments=9

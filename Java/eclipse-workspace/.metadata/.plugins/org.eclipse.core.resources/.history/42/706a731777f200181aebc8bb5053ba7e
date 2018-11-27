@@ -1,0 +1,11 @@
+package rooms;
+
+import mainImplentation.Game;
+
+public class RockPaperScissors implements Game extends Room{
+	private String[] results = {"Rock", "Paper", "Scissors"};
+	
+	public String getRPS() {
+		return results[rand.nextInt(results.length)];
+	}
+}

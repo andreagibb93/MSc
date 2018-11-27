@@ -1,0 +1,16 @@
+package mainImplentation;
+
+//dice player, inherits from game class
+public class Dice implements Game {
+	
+	//constructor for dice class
+	public Dice() {
+		super();
+	}
+	
+	// randomly generated number for dice
+	public int rollDice() {
+		return rand.nextInt(5) + 1;
+	}
+
+}

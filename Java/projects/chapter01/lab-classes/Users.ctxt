@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Users
+comment0.text=\n\ Write\ a\ description\ of\ class\ Users\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=fullName\ studentID
+comment1.target=Users(java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment2.text=\n\ Return\ the\ full\ name\ of\ this\ student.\n
+comment3.params=replacementName
+comment3.target=void\ changeName(java.lang.String)
+comment3.text=\n\ Set\ a\ new\ name\ for\ this\ student.\n
+comment4.params=
+comment4.target=java.lang.String\ getLoginName()
+comment5.params=
+comment5.target=java.lang.String\ getStudentID()
+comment5.text=\n\ Return\ the\ student\ ID\ of\ this\ student.\n
+numComments=6

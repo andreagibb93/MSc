@@ -1,0 +1,20 @@
+
+public class weeknineEXTRA {
+	
+private ArrayList<Book> books;
+
+	
+	public weeknineEXTRA()
+	{
+		books = new ArrayList<Book>();
+    }
+
+	public void searchCollection(String searchString)
+	{
+		for (Book book: books){
+			if (book.getTitle().startsWith(searchString)||book.getAuthor().startsWith(searchString))
+				book.trimToSize();
+				book.printDetails();
+     }
+	}
+}

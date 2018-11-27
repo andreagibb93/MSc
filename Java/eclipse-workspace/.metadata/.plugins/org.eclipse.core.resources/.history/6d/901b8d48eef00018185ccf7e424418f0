@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+
+public class weeknineEXTRA {
+
+	private Object [] myArray;
+
+	// constructor
+	public weeknineEXTRA() {
+	myArray = new Object[10];
+			}
+      
+      // use add() method to add elements in the list
+	myArray.add(35);
+	myArray.add(20);
+	myArray.add(25);
+      
+      // Trim the arraylist
+	myArray.trimToSize();
+
+      // let us print all the elements available in list
+      for (Object ob : myArray) {
+         System.out.println("Number = " + ob);
+      }
+   }
+} 
