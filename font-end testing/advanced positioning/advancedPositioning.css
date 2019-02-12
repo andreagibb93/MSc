@@ -1,0 +1,53 @@
+/* advanced positioning with flexbox */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 1200px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.example {
+  display: flex;
+  justify-content: space-around;
+
+  width: 800px;
+  margin: 50px 0;
+  background-color: #D6E9FE;
+}
+
+.item img {
+  display: block;
+}
+/* item - relative :  the top and left properties let you define how far it’s offset from its static position. This is sort of like setting an (x, y) coordinate for the element.*/
+.item-relative {
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+/*consider this the most manual way to lay out an element.*/
+.item-absolute {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+/* relatively absolute positioning*/
+.absolute {
+  position: relative;
+}
+
+/*fixed positioning
+The key difference is that fixed elements don’t scroll with the rest of the page.*/
+.item-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}

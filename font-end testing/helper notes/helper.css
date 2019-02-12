@@ -1,0 +1,117 @@
+/* helpful CSS tricks */
+
+/* this keeps top and bottom margin the same,
+left & right are auto, width stays the same
+'center align' and responosive*/
+
+.className {
+  /* this is how to link a class*/
+}
+.className.idtag{
+  /* this links the class and the id */
+}
+.className idtag {
+  /* this links the idtag inside of the class */
+}
+
+body {
+  background: #4E2B6A;
+}
+
+/* this keeps top and bottom margin the same,
+left & right are auto, width stays the same
+'center align' and responosive*/
+.centerAlignContent {
+  background: #D3DFDE;
+margin: 50px auto;
+width: 70%;
+/* using min and max height
+for example, instead of using 70% of
+the screen all time, set some responsive boundries*/
+max-width: 800px;
+min-width: 400px;
+}
+
+
+/* display navigation bar */
+.nav{
+  list-style: none;
+  padding: 10%;
+}
+.nav li {
+  display: inline;
+}
+
+/* dry, clean code that dont have to write twice
+Gouping  */
+h1, h2, p {
+  color: white;
+  padding: 10%;
+  text-align: center;
+
+}
+h1 {
+  font-size: 20px;
+
+
+}
+p {
+  font-size: 14px;
+}
+
+/* using floats, wraps other elements around the float
+if this were an image you could say*/
+.headerExample {
+  float: right;
+  margin-right: 40px;
+  margin-bottom: 40px;
+
+
+}
+
+
+.col-Container {
+  color: pink;
+  list-style: none;
+
+}
+.left-col:hover {
+  background: #34495E;
+}
+
+/* making colums*/
+.left-col {
+  float: left;
+  width: 20%;
+  margin:40px 10% 40px 5%;
+  background: #444;
+}
+.right-col {
+  float: left;
+  width: 55%;
+  margin: 40px 5% 40px 5%;
+  background: #666;
+}
+
+/* edit button states*/
+li a{
+  text-decoration: none;
+  color: pink;
+}
+li a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+li a:active {
+  background: blue;
+}
+
+li:last-child {
+  font-weight: bold;
+}
+
+/* using > says, directly*/
+.col-Container > li {
+  display: inline;
+}

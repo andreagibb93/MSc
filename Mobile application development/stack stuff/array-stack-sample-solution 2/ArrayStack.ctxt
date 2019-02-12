@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=ArrayStack
+comment0.text=\n\ An\ implementation\ of\ the\ StackADT\ inteface.\n\ Insertions\ and\ deletions\ of\ elements\ on\ the\ stack\ follow\ the\ last-in\ first-out\ scheme\ (LIFO).\n
+comment1.params=capacity
+comment1.target=ArrayStack(int)
+comment1.text=\n\ Creates\ a\ new\ ArrayStack\ with\ a\ custom\ capacity.\n
+comment2.params=
+comment2.target=ArrayStack()
+comment2.text=\n\ Creates\ a\ new\ ArrayStack\ with\ a\ default\ capacity.\n
+comment3.params=element
+comment3.target=void\ push(java.lang.Object)
+comment3.text=\n\ Inserts\ element\ to\ be\ at\ top\ of\ the\ stack;\ prints\ error\ if\ the\ stack\ is\ full.\n
+comment4.params=
+comment4.target=java.lang.Object\ pop()
+comment4.text=\n\ Removes\ and\ returns\ the\ top\ element\ on\ the\ stack;\ prints\ error\ and\ returns\ null\ if\ the\ stack\ is\ empty.\n
+comment5.params=
+comment5.target=java.lang.Object\ top()
+comment5.text=\n\ Returns\ the\ top\ element\ on\ the\ stack,\ without\ removing\ it;\ prints\ error\ and\ returns\ null\ if\ the\ stack\ is\ empty.\n
+comment6.params=
+comment6.target=int\ size()
+comment6.text=\n\ Returns\ the\ number\ of\ elements\ on\ the\ stack.\n
+comment7.params=
+comment7.target=boolean\ isEmpty()
+comment7.text=\n\ Returns\ true\ if\ the\ stack\ is\ empty\ (no\ elements\ on\ the\ stack);\ otherwise,\ false.\n
+numComments=8

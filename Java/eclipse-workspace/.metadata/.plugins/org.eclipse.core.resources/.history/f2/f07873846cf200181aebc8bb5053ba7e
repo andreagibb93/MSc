@@ -1,5 +1,0 @@
-package mainImplentation;
-
-public class Player extends Character{
-
-}

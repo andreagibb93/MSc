@@ -1,7 +1,0 @@
-package rooms;
-
-import mainImplentation.Enemy;
-
-public class EnemyRoom {
-	private Enemy enemy;
-}

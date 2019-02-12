@@ -1,9 +1,0 @@
-package mainImplentation;
-
-// class enemy, inherits from Character class
-public class Enemy extends Character {
-	
-
-	
-}
-	

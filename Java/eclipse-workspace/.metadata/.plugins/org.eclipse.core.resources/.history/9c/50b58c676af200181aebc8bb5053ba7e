@@ -1,8 +1,0 @@
-package mainImplentation;
-
-public class Enemy extends Character{
-	
-	private int health;
-	private 
-
-}
