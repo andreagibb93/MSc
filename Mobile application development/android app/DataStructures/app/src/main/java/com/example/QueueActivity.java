@@ -30,7 +30,7 @@ public class QueueActivity extends AppCompatActivity  {
         rv.setAdapter(queueAdapter);
     }
 
-    // add element to the end of thw queue
+    // add element to the end of the queue
     public void enqueueAdd(View view) {
         EditText toEnqueue = findViewById(R.id.inputQueue);
         String strToPush = toEnqueue.getText().toString();
