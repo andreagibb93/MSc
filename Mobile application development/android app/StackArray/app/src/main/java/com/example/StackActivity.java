@@ -7,12 +7,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.Stack;
+import com.example.structures.Stack;
 
 public class StackActivity extends AppCompatActivity {
 
     // declaration
-    Stack<String> myStack = new Stack<>();
+    Stack myStack = new Stack();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,10 +38,10 @@ public class StackActivity extends AppCompatActivity {
         }
     }
 
-    //pop elements out of the stack
+    // pop elements out of the stack //
     public void popStack(View view) {
         if (myStack.size() > 0) {
-            String poppedString = myStack.pop();
+            String poppedString = (String) myStack.pop();
 
             TextView display = findViewById(R.id.display);
             display.setText(poppedString);
