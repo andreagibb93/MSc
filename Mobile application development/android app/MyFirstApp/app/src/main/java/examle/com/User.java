@@ -52,4 +52,8 @@ public class User {
 
         this.email = email;
     }
+    // set email method
+    public void setEmail(String email) {
+        this.email = email;
+    }
 }

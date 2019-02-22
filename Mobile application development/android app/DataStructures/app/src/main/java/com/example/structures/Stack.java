@@ -27,7 +27,10 @@ public class Stack {
     }
 
     public int size() {
-
         return listStack.size();
+    }
+
+    public LinkedList getRawList() {
+        return listStack;
     }
 }

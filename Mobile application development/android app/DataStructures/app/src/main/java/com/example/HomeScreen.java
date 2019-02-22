@@ -14,7 +14,7 @@ public class HomeScreen extends AppCompatActivity {
 
     }
 
-    // stack button leads to stack pages
+    // stack button leads to stack page
     public void goToStack(View view) {
         Intent intent = new Intent(this, StackActivity.class);
         startActivity(intent);

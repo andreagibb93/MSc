@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.Adapters.QueueAdapter;
+import com.example.adapters.QueueAdapter;
 import com.example.structures.Queue;
 
 public class QueueActivity extends AppCompatActivity  {
@@ -30,32 +30,47 @@ public class QueueActivity extends AppCompatActivity  {
         rv.setAdapter(queueAdapter);
     }
 
-    // add element to the end of the queue
+    // adds element to the end of the queue
     public void enqueueAdd(View view) {
+        //get the user input from edit text, pass as a String
         EditText toEnqueue = findViewById(R.id.inputQueue);
         String strToPush = toEnqueue.getText().toString();
 
+        // if the user types nothing into the edit text, toast pop-up alert
         if (strToPush.equals("")) {
             Toast.makeText(this, "Please enter some text!", Toast.LENGTH_LONG).show();
         } else {
+            // push string to queue
+            // clear the user input from the edit text
             myQueue.enqueue(strToPush);
             toEnqueue.getText().clear();
         }
 
+        // update display of recycler view (list)
         queueAdapter.notifyDataSetChanged();
     }
 
-    //remove elements out of the queue by first element that went in
+    //remove elements out of the queue by first element that went in (index 0)
     public void dequeueRemove(View view) {
+
+        // if the queue is bigger than 0, pop string out
         if (myQueue.size() > 0) {
             String poppedString = (String) myQueue.dequeue();
 
+            // remove string from the recycler view (list)
             TextView display = findViewById(R.id.inputQueue);
             display.setText(poppedString);
+
+            // clears the text box after dequeue is pressed
+            TextView inputQueue = findViewById(R.id.inputQueue);
+            inputQueue.setText("");
+
         } else {
+            //if nothing to remove, toast alert user
             Toast.makeText(this, "Nothing here to dequeue!", Toast.LENGTH_LONG).show();
         }
 
+        // update display of recycler view (list)
         queueAdapter.notifyDataSetChanged();
     }
 }

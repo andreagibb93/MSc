@@ -2,11 +2,11 @@ package examle.com;
 
 public class Book {
 
-    //
+    // declaration
     priavte String title;
     private String author;
 
-    //constructor
+    //constructor, the value of title & book = empty strings
     public Book() {
         title = "";
         author = "";
@@ -18,20 +18,27 @@ public class Book {
         this.author = author;
     }
 
+    //getter
     public String getTitle() {
+
         return title;
     }
 
+    //setter
     public void setTitle(String title) {
         this.title = title;
 
     }
 
+    //getter
     public String getAuthor() {
+
         return author;
     }
 
-    publuc void setAuthor(String author) {
+    //setter
+    public void setAuthor(String author) {
+
         this.author = author;
     }
 }
