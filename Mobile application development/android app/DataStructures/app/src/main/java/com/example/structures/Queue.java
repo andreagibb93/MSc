@@ -10,19 +10,16 @@ public class Queue {
 
     // create a linked list
     public Queue() {
-
         listQueue = new LinkedList();
     }
 
     // add object to the queue
     public void enqueue(Object o) {
-
         listQueue.add(o);
     }
 
     // remove object by index position 0
     public Object dequeue() {
-
         return listQueue.remove(0);
     }
 
@@ -31,11 +28,12 @@ public class Queue {
         listQueue.clear();
     }
 
+    // get the size of the queue
     public int size() {
         return listQueue.size();
     }
 
-    //Returns the underlying list of this implementation
+    // returns the underlying list of this implementation
     public List getRawList() {
         return listQueue;
     }

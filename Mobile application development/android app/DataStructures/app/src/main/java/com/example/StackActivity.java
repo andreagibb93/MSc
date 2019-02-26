@@ -26,6 +26,7 @@ public class StackActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stack);
 
+        // apply a linear layout to the recycler view and set the adapter
         RecyclerView rv = (RecyclerView) findViewById(R.id.display_stack);
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
@@ -40,9 +41,10 @@ public class StackActivity extends AppCompatActivity {
         String strToPush = toPush.getText().toString();
 
         if (strToPush.equals("")) {
-            //TODO: Alert
+            //toast alert the user
             Toast.makeText(this, "Please enter some text!", Toast.LENGTH_LONG).show();
         } else {
+            //clear user inout box
             myStack.push(strToPush);
             toPush.getText().clear();
 
@@ -54,7 +56,7 @@ public class StackActivity extends AppCompatActivity {
         stackAdapter.notifyDataSetChanged();
     }
 
-    // pop elements out of the stack //
+    // pop elements out of the stack
     public void popStack(View view) {
         if (myStack.size() > 0) {
             String poppedString = (String) myStack.pop();

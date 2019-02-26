@@ -8,20 +8,25 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.example.adapters.SortAdapter;
+import com.example.sorter.Sorter;
 
 import java.util.Random;
 
 public class SortActivity extends AppCompatActivity {
 
-    //create a fixed size arraylist SHOULD THIS AN ARRAY INSTEAD???????
+    //create a fixed size arrat
     public final int ARRAY_SIZE = 10;
 
+    // declaration
     int[] randomNumbers = new int[ARRAY_SIZE];
+
     // generate random number
     Random rand = new Random();
-    //
+
+    // declare a new sort adapter for the recyclerview
     SortAdapter sortAdapter = new SortAdapter(randomNumbers);
-    //
+
+    // declare a new handler for the sorting thread
     Handler handler;
 
     @Override
@@ -31,11 +36,12 @@ public class SortActivity extends AppCompatActivity {
 
         handler = new Handler();
 
-        // create arraylist of random numbers
+        // create array of random numbers with a limit of 30
         for (int i = 0; i < ARRAY_SIZE; i++) {
             randomNumbers[i] = rand.nextInt(30);
         }
 
+        // apply a linear layout to the recycler view and set the adapter
         RecyclerView rv = (RecyclerView) findViewById(R.id.arraylistView);
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
@@ -58,47 +64,8 @@ public class SortActivity extends AppCompatActivity {
 
     //onClick function that 'sorts'
     public void sort(View view) {
-        class Sorter implements Runnable {
-            private SortAdapter sa;
-
-            public Sorter(SortAdapter sa) {
-                this.sa = sa;
-            }
-
-            public void run() {
-                boolean sorted = false;
-
-                // while list unsorted, loop though swapping each element with one next, until sorted
-                while(!sorted) {
-                    sorted = true;
-
-                    for (int i = 0; i < randomNumbers.length - 1; i++) {
-                        if (randomNumbers[i] > randomNumbers[i + 1]) {
-                            sorted = false;
-
-                            // hold int in a placeholder
-                            int placeholder = randomNumbers[i];
-                            randomNumbers[i] = randomNumbers[i + 1];
-                            randomNumbers[i + 1] = placeholder;
-                            try {
-                                // sleep the thread so the visuals can be displayed on activity
-                                Thread.sleep(500);
-                            } catch (Exception e) { }
-
-                            handler.post(new Runnable() {
-                                @Override
-                                public void run() {
-                                    sa.notifyDataSetChanged();
-                                }
-                            });
-                        }
-                    }
-                }
-            }
-        }
-
         // start new thread
-        new Thread(new Sorter(sortAdapter)).start();
+        new Sorter(sortAdapter, randomNumbers, handler).start();
         // update display of recycler view (list)
         sortAdapter.notifyDataSetChanged();
     }

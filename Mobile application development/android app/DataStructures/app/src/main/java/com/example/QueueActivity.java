@@ -23,6 +23,7 @@ public class QueueActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_queue);
 
+        // set the recyclerview to have a linear layour and set the adapter
         RecyclerView rv = (RecyclerView) findViewById(R.id.recyclerView);
         LinearLayoutManager llm = new LinearLayoutManager(this);
         llm.setOrientation(LinearLayoutManager.VERTICAL);
@@ -41,7 +42,7 @@ public class QueueActivity extends AppCompatActivity  {
             Toast.makeText(this, "Please enter some text!", Toast.LENGTH_LONG).show();
         } else {
             // push string to queue
-            // clear the user input from the edit text
+            // clear the user input from the edit text box
             myQueue.enqueue(strToPush);
             toEnqueue.getText().clear();
         }
