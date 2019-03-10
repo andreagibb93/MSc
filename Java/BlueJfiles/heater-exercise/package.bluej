@@ -1,11 +1,11 @@
 #BlueJ package file
 editor.fx.0.height=722
 editor.fx.0.width=800
-editor.fx.0.x=729
-editor.fx.0.y=191
+editor.fx.0.x=640
+editor.fx.0.y=133
 objectbench.height=123
-objectbench.width=309
-package.divider.horizontal=0.6652631578947369
+objectbench.width=278
+package.divider.horizontal=0.6
 package.divider.vertical=0.6941176470588235
 package.editor.height=288
 package.editor.width=369
@@ -28,5 +28,5 @@ target1.name=Heater
 target1.showInterface=false
 target1.type=ClassTarget
 target1.width=80
-target1.x=125
-target1.y=111
+target1.x=130
+target1.y=110

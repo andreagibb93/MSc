@@ -32,7 +32,7 @@ public class MyArrayList
             
             
         }
-        for i in range Object [] == null) {
+        for (i in range Object [] == null) {
             myArray.add(Object);
         }
         
