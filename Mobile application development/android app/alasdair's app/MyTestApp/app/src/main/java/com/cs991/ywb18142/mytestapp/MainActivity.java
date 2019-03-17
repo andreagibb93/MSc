@@ -19,7 +19,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         books = new BookDatabase();
+
         books.addBook(new Book("Joe", "Book"));
         books.addBook(new Book("Joe", "Book2"));
         books.addBook(new Book("Steve", "Book"));
